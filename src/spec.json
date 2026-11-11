@@ -1,0 +1,268 @@
+{
+  "title": "Calendario delle sedute e degli ordini del giorno",
+  "description": "Prototipo navigabile per consultare le sedute inventate di giunta e consiglio comunale, filtrare gli ordini del giorno, aggiungere punti e seguire verbali e delibere in pubblicazione.",
+  "accent": "indigo",
+  "pages": [
+    {
+      "id": "cruscotto",
+      "title": "Cruscotto",
+      "description": "Riepilogo delle prossime sedute, dei verbali e delle delibere da pubblicare.",
+      "metrics": [
+        {
+          "label": "Sedute prossime",
+          "value": "4"
+        },
+        {
+          "label": "Punti all'ordine del giorno",
+          "value": "18"
+        },
+        {
+          "label": "Verbali da completare",
+          "value": "2"
+        },
+        {
+          "label": "Delibere da pubblicare",
+          "value": "3"
+        }
+      ],
+      "columns": [
+        "Seduta",
+        "Data",
+        "Organo",
+        "Stato verbale",
+        "Delibere da pubblicare"
+      ],
+      "rows": [
+        [
+          "Giunta di Lumo",
+          "12/05/2026",
+          "Giunta",
+          "In redazione",
+          "1"
+        ],
+        [
+          "Consiglio di Vela",
+          "18/05/2026",
+          "Consiglio",
+          "Da avviare",
+          "2"
+        ],
+        [
+          "Giunta di Nubi",
+          "21/05/2026",
+          "Giunta",
+          "Approvato",
+          "0"
+        ],
+        [
+          "Consiglio di Lumo",
+          "27/05/2026",
+          "Consiglio",
+          "In verifica",
+          "1"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "sedute",
+      "title": "Sedute e ordini del giorno",
+      "description": "Elenco filtrabile delle sedute e dei relativi punti all'ordine del giorno. La ricerca e i filtri sono controlli di consultazione, distinti dal form di inserimento.",
+      "metrics": [
+        {
+          "label": "Sedute in elenco",
+          "value": "4"
+        },
+        {
+          "label": "Punti registrati",
+          "value": "18"
+        }
+      ],
+      "columns": [
+        "Seduta",
+        "Data",
+        "Organo",
+        "Punto all'ordine del giorno",
+        "Stato verbale",
+        "Stato delibera"
+      ],
+      "rows": [
+        [
+          "Giunta di Lumo",
+          "12/05/2026",
+          "Giunta",
+          "Approvazione del piano delle aiuole",
+          "In redazione",
+          "Da pubblicare"
+        ],
+        [
+          "Giunta di Lumo",
+          "12/05/2026",
+          "Giunta",
+          "Calendario delle iniziative di quartiere",
+          "In redazione",
+          "Non prevista"
+        ],
+        [
+          "Consiglio di Vela",
+          "18/05/2026",
+          "Consiglio",
+          "Piano di manutenzione delle sale civiche",
+          "Da avviare",
+          "Da pubblicare"
+        ],
+        [
+          "Consiglio di Vela",
+          "18/05/2026",
+          "Consiglio",
+          "Criteri per l'uso degli spazi comunali",
+          "Da avviare",
+          "Da pubblicare"
+        ],
+        [
+          "Giunta di Nubi",
+          "21/05/2026",
+          "Giunta",
+          "Percorso di cura dei giardini pubblici",
+          "Approvato",
+          "Pubblicata"
+        ],
+        [
+          "Consiglio di Lumo",
+          "27/05/2026",
+          "Consiglio",
+          "Programma delle attività culturali",
+          "In verifica",
+          "Da pubblicare"
+        ]
+      ],
+      "form": [
+        "Seduta",
+        "Data",
+        "Organo",
+        "Punto all'ordine del giorno"
+      ]
+    },
+    {
+      "id": "verbali",
+      "title": "Stato dei verbali",
+      "description": "Controllo dell'avanzamento dei verbali associati alle sedute di esempio.",
+      "metrics": [
+        {
+          "label": "In redazione",
+          "value": "1"
+        },
+        {
+          "label": "Da avviare",
+          "value": "1"
+        },
+        {
+          "label": "In verifica",
+          "value": "1"
+        },
+        {
+          "label": "Approvati",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Seduta",
+        "Data",
+        "Organo",
+        "Stato verbale",
+        "Prossima attività"
+      ],
+      "rows": [
+        [
+          "Giunta di Lumo",
+          "12/05/2026",
+          "Giunta",
+          "In redazione",
+          "Completare la bozza"
+        ],
+        [
+          "Consiglio di Vela",
+          "18/05/2026",
+          "Consiglio",
+          "Da avviare",
+          "Avviare la stesura"
+        ],
+        [
+          "Giunta di Nubi",
+          "21/05/2026",
+          "Giunta",
+          "Approvato",
+          "Nessuna"
+        ],
+        [
+          "Consiglio di Lumo",
+          "27/05/2026",
+          "Consiglio",
+          "In verifica",
+          "Verificare il testo"
+        ]
+      ],
+      "form": []
+    },
+    {
+      "id": "delibere",
+      "title": "Delibere da pubblicare",
+      "description": "Riepilogo delle delibere approvate e del loro stato di pubblicazione.",
+      "metrics": [
+        {
+          "label": "Da pubblicare",
+          "value": "3"
+        },
+        {
+          "label": "Pubblicate",
+          "value": "1"
+        }
+      ],
+      "columns": [
+        "Seduta",
+        "Data",
+        "Organo",
+        "Punto all'ordine del giorno",
+        "Stato delibera"
+      ],
+      "rows": [
+        [
+          "Giunta di Lumo",
+          "12/05/2026",
+          "Giunta",
+          "Approvazione del piano delle aiuole",
+          "Da pubblicare"
+        ],
+        [
+          "Consiglio di Vela",
+          "18/05/2026",
+          "Consiglio",
+          "Piano di manutenzione delle sale civiche",
+          "Da pubblicare"
+        ],
+        [
+          "Consiglio di Vela",
+          "18/05/2026",
+          "Consiglio",
+          "Criteri per l'uso degli spazi comunali",
+          "Da pubblicare"
+        ],
+        [
+          "Giunta di Nubi",
+          "21/05/2026",
+          "Giunta",
+          "Percorso di cura dei giardini pubblici",
+          "Pubblicata"
+        ],
+        [
+          "Consiglio di Lumo",
+          "27/05/2026",
+          "Consiglio",
+          "Programma delle attività culturali",
+          "Da pubblicare"
+        ]
+      ],
+      "form": []
+    }
+  ]
+}
